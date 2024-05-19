@@ -1,21 +1,27 @@
-You will also like to see https://github.com/lgs2007m/cdt-gpt-ipq60xx-generate
+
 
 ## build env
 
-OS: ubuntu 18.04
+use docker
+
+### build docker image. run once
+```bash
+git clone https://github.com/KunYi/uboot-ipq60xx-build
+cd uboot-ipq60xx-build
+cd docker
+./build.sh
+cd ..
+```
+
+### build
+
+u-boot-2016 source code base on https://github.com/gl-inet/uboot-ipq60xx and
+https://github.com/0x5826/uboot-ipq60xx-build
 
 ```bash
-sudo bash -c  "apt update && apt install git python build-essential device-tree-compiler -y"
-```
-
-## uboot build 
-u-boot-2016 source code base on https://github.com/gl-inet/uboot-ipq60xx
-
-PS: The mbn scripts run with python2.7, you should install and switch to python2.7.
-```
-git clone https://github.com/lgs2007m/uboot-ipq60xx-build
-cd uboot-ipq60xx-build/
+./entrycontainer
 ./build.sh
+exit
 ```
 
 The uboot binary will be: uboot-ipq60xx-build/u-boot.mbn
