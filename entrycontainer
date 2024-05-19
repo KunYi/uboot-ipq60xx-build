@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+HOME_DIR="${HOME}"
+OWRT_DIR=$(realpath .)
+
+docker run --volume ${OWRT_DIR}:${HOME_DIR}/openwrt:rw --volume /tmp:/tmp \
+  --workdir=${HOME_DIR}/openwrt \
+  --env TERM=xterm-256color --env SHELL=/bin/bash \
+  --rm --init --tty --interactive \
+  --hostname openwrt-build \
+  openwrt-builder:legacy
