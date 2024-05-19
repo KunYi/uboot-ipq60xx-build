@@ -2,24 +2,25 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>U-Boot 更新</title>
+		<title>U-Boot update</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="shortcut icon" href="f.png">
 	</head>
 	<body>
 		<div id="m">
-			<h1>U-BOOT 更新</h1>
-			<p>此页面用于路由器的<strong>U-Boot 引导程序</strong>更新。<br>请选择要更新的路由器U-Boot文件并点击 <strong>更新 U-Boot</strong> 按钮。</p>
-			<form method="post" enctype="multipart/form-data"><input type="file" name="uboot"><input type="submit" value="更新 U-Boot"></form>
+		<h1>U-BOOT UPDATE</h1>
+			<p>You are going to update the <strong>U-Boot bootloader</strong> on the device.<br>Please choose a file from your local hard drive and click the <strong>Update U-Boot</strong> button.</p>
+			<form method="post" enctype="multipart/form-data"><input type="file" name="uboot"><input type="submit" value="Update U-Boot"></form>
 			<div class="i w red">
-				<strong>提醒：</strong>
+				<strong>WARNINGS</strong>
 				<ul>
-				<ul>
-					<li>在更新期间不要断开路由器电源，如果更新顺利，设备将自动重启。</li>
-					<li>更新U-Boot是一个十分危险的操作，可能导致您的路由器无法启动。</li>
+					<li>Do not power off the device during the update.</li>
+					<li>If everything goes well, the device will restart automatically.</li>
+					<li>You can upload any file, so ensure you choose the proper U-Boot image for your device.</li>
+					<li>Updating U-Boot is a very dangerous operation and may damage your device!</li>
 				</ul>
 			</div>
 		</div>
-		<div id="f">version:23.05.28</div>
+		<div id="f">Version: 24.05.19</div>
 	</body>
 </html>

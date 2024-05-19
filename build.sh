@@ -7,7 +7,7 @@ cd u-boot-2016/
 echo "Build"
 make ipq6018_defconfig
 # make menuconfig
-make V=s
+make V=s -j $(nproc)
 
 echo "Strip elf"
 arm-openwrt-linux-strip u-boot

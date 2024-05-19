@@ -1,2 +1,6 @@
 .DS_Store
 .Trashes
+u-boot.mbn
+fsdata.c
+dtbtable.S
+*.pyc
