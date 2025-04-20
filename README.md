@@ -9,7 +9,7 @@ use docker
 git clone https://github.com/KunYi/uboot-ipq60xx-build
 cd uboot-ipq60xx-build
 cd docker
-./build.sh
+./build-container # build image of container
 cd ..
 ```
 
@@ -19,8 +19,8 @@ u-boot-2016 source code base on https://github.com/gl-inet/uboot-ipq60xx and
 https://github.com/0x5826/uboot-ipq60xx-build
 
 ```bash
-./entrycontainer
-./build.sh
+./entrycontainer  # launch the docker and into the container
+./build.sh        # build uboot
 exit
 ```
 
